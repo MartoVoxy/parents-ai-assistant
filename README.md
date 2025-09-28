@@ -1,31 +1,26 @@
 
-# CrewAI Weather Assistant
-
-Python application that automates daily weather-based clothing advice for children, integrating AI and Telegram notifications. The workflow replicates a complex n8n automation:
-
-- Daily trigger at 7:00 AM
-- Fetch weather data from Google Weather API
-- Analyze weather data with a CrewAI agent (custom prompt, memory)
-- AI models: Gemini, Claude (API)
-- Send advice to Telegram chats
-
-## Project Structure
-
-- `main.py` — Main scheduler and orchestrator
-
 # Parents AI Assistant
 
-Parents AI Assistant is a Python application designed to help parents with daily tasks and decisions, starting with weather-based clothing advice for children. The project is modular and ready to expand with new features to support parents in various aspects of family life.
+Parents AI Assistant is a comprehensive Python application designed to help parents with daily tasks and decisions. Currently featuring weather-based clothing advice for children, the platform is built with a modular, extensible architecture to support future AI agents and tools for various aspects of family life.
 
-## Features
+## Current Features
 
-- Daily scheduled advice at 7:00 AM (customizable)
-- Weather-based clothing recommendations for nursery and kindergarten
-- AI-powered suggestions (Gemini, Claude, extensible)
-- Telegram notifications to one or more chats
-- Internationalized prompts (Italian/English)
-- Logging to console and file
-- Easy to extend for future parent-assistant features
+- **Weather Assistant Agent**: Daily scheduled weather-based clothing advice at 7:00 AM (customizable)
+- **Smart Recommendations**: AI-powered suggestions for nursery and kindergarten clothing
+- **Multi-AI Support**: Integrates Gemini and Claude models (easily extensible)
+- **Telegram Notifications**: Sends advice to one or more configured chats
+- **Internationalization**: Support for Italian and English prompts
+- **Comprehensive Logging**: Console and file logging for monitoring
+- **Modular Architecture**: Ready for future parent-assistant features and agents
+
+## Future Roadmap
+
+Parents AI Assistant is designed to grow with additional agents and tools:
+- **Health & Nutrition Agent**: Meal planning and health reminders
+- **Schedule Assistant**: Family calendar management and activity suggestions
+- **Educational Agent**: Learning activities and homework assistance
+- **Emergency Assistant**: Quick access to important contacts and procedures
+- **Budget Helper**: Family expense tracking and savings suggestions
 
 ## Project Structure
 
@@ -33,9 +28,12 @@ Parents AI Assistant is a Python application designed to help parents with daily
 - `crewai_agent.py` — AI agent logic and model selection
 - `weather_api.py` — Weather data fetcher
 - `telegram_bot.py` — Telegram notification sender
+- `ai_gemini.py` — Gemini AI integration
+- `ai_anthropic.py` — Claude AI integration
+- `config.py` — Configuration management
 - `.env` — Secrets and configuration
-- `.env.example` — Example environment file
 - `requirements.txt` — Python dependencies
+- `prompt_*.txt` — Internationalized prompt templates
 
 ## Prerequisites
 
@@ -162,4 +160,10 @@ Before publishing, double-check that no sensitive data (API keys, tokens) are pr
 
 ---
 
-Parents AI Assistant helps parents with daily decisions and tasks, starting with weather-based clothing advice, and is ready to grow with new features for families.
+## Contributing
+
+Parents AI Assistant welcomes contributions! Whether you want to add new AI agents, improve existing features, or suggest new tools for parents, please see `CONTRIBUTING.md` for guidelines.
+
+---
+
+**Parents AI Assistant** — Your intelligent companion for family life, starting with weather advice and expanding to support parents in every aspect of raising children. Built with extensibility in mind, ready to grow with your family's needs.
