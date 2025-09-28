@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Environment & secrets
+.env
+service_account.json
+crewai_meteo.log
+
+# Jupyter
+*.ipynb_checkpoints
+
+# VS Code
+.vscode/
+
+# OS
+.DS_Store
+
+# Test & temp
+*.log
+*.tmp
+*.bak
+
+# Other
+*.sqlite3
